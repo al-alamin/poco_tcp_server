@@ -49,5 +49,13 @@ telnet localhost 28888
 ```
 Enter a string after the prompt "Welcome to POCO TCP server. Enter your string:". The server will send back the reversed string.
 
+
+# Limitations
+* The server is not designed to handle multiple clients simultaneously. If multiple clients connect at the same time, only one client will be served, and the rest will have to wait until the current client disconnects.
+* If a client disconnects abruptly, the server may need to be manually restarted to accept new connections.
+* The maximum length of the input string is limited by the maximum size of a C++ std::string, which is typically quite large, but in practice, network latency and client-side restrictions might limit the practical size of the string that can be reversed.
+
+**There are many corner cases which are ignored for simplicity of this implementation.**
+
 ## Contact
 If you want to contact me, you can reach me at a.alamin.cse@gmail.com
