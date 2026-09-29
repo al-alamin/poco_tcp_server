@@ -1,0 +1,16 @@
+schema_version: 1
+summary: A small C++ TCP-server demonstration using POCO to accept a string and return
+  its reversal.
+state: unknown
+intended_readers:
+- Developers studying the POCO networking demonstration.
+consult_when:
+- Changing the sample TCP server or its build/run instructions.
+watch_when:
+- Changes to tcp_server.cpp or documented sample behavior and limitations.
+current_capabilities:
+- tcp_server.cpp and sample-output material are tracked; README documents the reversal
+  protocol on port 28888.
+- README explicitly describes single-client handling and omitted corner cases; this
+  is a sample rather than a validated production service.
+planned_capabilities: []
