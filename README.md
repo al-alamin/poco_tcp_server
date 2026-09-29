@@ -25,7 +25,7 @@ You can build the server application by following these steps:
     ```bash
     g++ -o tcp_server tcp_server.cpp -lPocoNet -lPocoFoundation
     ```
-4. The server executable `server` should now be in your current directory.
+4. The server executable `tcp_server` should now be in your current directory.
 
 ## Running the Server
 
